@@ -1,0 +1,113 @@
+.header
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  border-bottom: 1px solid #354aa9
+  z-index: 10
+  &__container
+    height: 80px
+    position: relative
+  &__wrp
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+    a
+      color: #fff
+      padding: 7px 0
+  &__logo
+    font-family: 'Cantarell', sans-serif
+    font-weight: bold
+    font-size: 32px
+    text-transform: uppercase
+    letter-spacing: 1px
+    transform: scaleX(1.2)
+    position: relative
+    left: 18px
+    margin-right: 150px
+  &__link-block
+    flex-grow: 1
+  &__link
+    margin-right: 20px
+
+// - - - - -
+
+.burger
+  z-index: 100
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 20px
+  margin: auto
+  width: 30px
+  height: 30px
+  &__btn
+    width: 100%
+    height: 100%
+    cursor: pointer
+  &__lines-block
+    +psevdo
+    top: 7px
+    left: 6px
+    width: 16px
+    height: 14px
+    &:before,&:after
+      width: 100%
+      height: 2px
+      left: 0
+      background: #fff
+      +tr
+    &:before
+      top: 0
+    &:after
+      bottom: 0
+    &.active
+      &:before
+        top: 6px
+        transform: rotate(45deg)
+        background: #000
+      &:after
+        bottom: 6px
+        transform: rotate(-45deg)
+        background: #000
+  &__mid-line
+    +zero
+    width: 100%
+    height: 2px
+    background: #fff
+    +tr
+    &.active
+      opacity: 0
+
+// - - - - -
+
+.sidebar
+  z-index: 20
+  position: fixed
+  top: 0
+  left: 0
+  height: 100vh
+  width: 0
+  background: rgba(25, 0, 114, 0.7)
+  overflow: hidden
+  +tr
+  &.active
+    width: 100%
+  &__container
+    background: #fff
+    height: 100%
+    width: 30%
+    position: relative
+  &__list
+    +vcenter
+    text-align: center
+  &__link
+    font-size: 30px
+    padding: 20px
+    color: #fff
+    opacity: 0
+    +tr
+    &.active
+      opacity: 1
+      color: #000

@@ -9,6 +9,5 @@ module.exports = [
   './assets/gulp/tasks/browserSync.js',
   './assets/gulp/tasks/scripts.js',
   './assets/gulp/tasks/js.vendors.js',
-  './assets/gulp/tasks/css.vendors.js',
-  './assets/gulp/tasks/svg.sprite.js'
+  './assets/gulp/tasks/css.vendors.js'
 ];

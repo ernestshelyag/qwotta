@@ -1,2 +1,34 @@
 +b.HEADER.header
-    span header
+    +e.DIV.container
+        +e.DIV.wrp.wrp
+            +e.A.logo(href='/') Qwotta.ru
+            +e.DIV.link-block
+                +e.A.link.underline(href='#') Туристам
+                +e.A.link.underline(href='#') Агентам
+
+            +e.A.enter.underline(href='#') Войти
+        +b.DIV.burger
+            +e.A.btn#burger-btn
+                +e.DIV.lines-block
+                    +e.SPAN.mid-line
+        +b.DIV.sidebar
+            +e.DIV.container
+                +e.UL.list
+                    +e.li.item
+                        +e.A.link.underline(href='/') main
+                    +e.li.item
+                        +e.A.link.underline(href='info.html') info
+                    +e.li.item
+                        +e.A.link.underline(href='hotels.html') hotels
+                    +e.li.item
+                        +e.A.link.underline(href='card.html') card
+
+
+
+
+
+
+
+
+
+

@@ -9,8 +9,7 @@ module.exports = function () {
       'cleanStatics',
       $.gulp.parallel(
         'copyFonts',
-        'copyImages',
-        'svgSprite'
+        'copyImages'
       )
     ));
   });

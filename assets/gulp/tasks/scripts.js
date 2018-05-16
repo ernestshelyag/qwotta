@@ -14,8 +14,7 @@ module.exports = function () {
           };
         })
       }))
-      .pipe($.gp.concat('main.min.js'))
-      .pipe($.gp.uglify())
+      .pipe($.gp.concat('main.js'))
       .pipe($.gulp.dest($.config.root + 'js/'));
   });
 };
