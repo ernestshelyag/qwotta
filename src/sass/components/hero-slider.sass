@@ -1,23 +1,56 @@
 .hero-slider
-  color: #fff
-  //height: 232px
-  &__item
-    border: solid 1px #000
-    margin: 0 5px
-    //width: 300px!important
-    //height: 232px!important
+  position: relative
+  &__container
     outline: none
+    position: relative
+  &__item
+    width: 300px
+    height: 230px
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    margin: auto
+    background: #cacaca
 
   .slick-list
     height: 232px
+
+  // arrows
+
   .slick-arrow
     position: absolute
-    width: 20px
-    height: 20px
-
+    width: 30px
+    height: 30px
+    top: -40px
+    cursor: pointer
   .slick-prev
-    left: 0
-    +b
+    left: 10px
   .slick-next
-    right: 0
-    +bb
+    right: 10px
+  .decor
+    padding: 0
+    margin: 0
+    width: 100%
+    height: 100%
+    display: block
+    background: #fff
+    +psevdo
+    +tr
+    &:before
+      width: 10px
+      height: 10px
+      +zero
+      border-top: solid 2px $gray
+      border-left: solid 2px $gray
+    &:hover
+      background: $main-color
+      &:before
+        border-top: solid 2px #fff
+        border-left: solid 2px #fff
+  .decor-prev:before
+    transform: rotate(-45deg)
+    left: 2px
+  .decor-next:before
+    transform: rotate(135deg)
+    right: 2px

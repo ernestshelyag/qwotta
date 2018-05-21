@@ -1,0 +1,9 @@
++b.SECTION.country-list
+    +e.H1.title
+        | Сравнивайте и бронируйте лучшие предложения
+        br
+        | по популярным направлениям
+    +e.UL.list
+        each item in countryList
+            +e.LI.item
+                +e.A.link(href="#")= item

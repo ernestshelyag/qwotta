@@ -2,15 +2,18 @@
     +e.DIV.title-block
         +e.H1.title Выбрать тур или забронировать отель - решайте сами!
     +e.DIV.card.wrp
-        span ??? есть вопросы по этому блоку, пока не делал ???
+        span в процессе
     +e.SPAN.text Выбирайте и бронируйте готовые туры или создавайте своё уникальное путешествие из отдельных услуг.
     +b.DIV.hero-slider
-        +e.DIV.item slide 1
-        +e.DIV.item slide 2
-        +e.DIV.item slide 3
-        +e.DIV.item slide 4
-        +e.DIV.item slide 5
-        +e.DIV.item slide 6
-        +e.DIV.item slide 7
-
-
+        each item in heroSlider
+            +e.DIV.container
+                +e.DIV.item
+                    +b.hero-slider-item
+                        +e.IMG.img(src=`${item.img}`)
+                        +e.DIV.info-block
+                            +e.DIV.info-line
+                                +e.H2.title= item.city
+                                +e.SPAN.text= item.hotelNum
+                            +e.DIV.info-line
+                                +e.SPAN.text= item.country
+                                +e.SPAN.text= item.hotelText

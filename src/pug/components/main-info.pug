@@ -1,0 +1,11 @@
++b.SECTION.main-info.wrp
+    +e.DIV.title-block
+        +e.H1.title Qwotta
+    +e.P.text Мы отобрали для Вас самые привлекатеьные предложения и выкупили квоту у отеля по наилучшей цене. Все что остается Вам - просто отправиться в путешествие.
+    +e.DIV.blocks
+        each item in mainInfo
+            +e.DIV.item
+                +e.IMG.icon(src=`${item.img}`)
+                +e.DIV.info-block
+                    +e.H2.item-title= item.title
+                    +e.P.item-text= item.text
