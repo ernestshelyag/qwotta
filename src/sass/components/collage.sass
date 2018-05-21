@@ -1,0 +1,52 @@
+.collage
+  display: flex
+  flex-direction: column
+  &__lev
+    height: 380px
+    margin-top: 20px
+    display: flex
+    &:first-child
+      margin-top: 0
+  &__item
+    &_1
+      flex-grow: 1
+      background-image: url("../img/main-cities/1.jpg")
+    &_2
+      width: 380px
+      margin-left: 20px
+      background-image: url("../img/main-cities/2.jpg")
+    &_3
+      width: 380px
+      background-image: url("../img/main-cities/3.jpg")
+    &_4
+      flex-grow: 1
+      background-image: url("../img/main-cities/4.jpg")
+    &_5
+      flex-grow: 1
+      margin-top: 20px
+      background-image: url("../img/main-cities/5.jpg")
+    &_6
+      width: 380px
+      background-image: url("../img/main-cities/6.jpg")
+    &_7
+      flex-grow: 1
+      margin-left: 20px
+      background-image: url("../img/main-cities/7.jpg")
+  &__form-block
+    background: $main-color
+    width: 380px
+    margin-left: 20px
+  &__psevdo-block
+    flex-grow: 1
+    margin-left: 20px
+    display: flex
+    flex-direction: column
+  &__link-all
+    background: $main-color
+    color: #fff
+    margin: 70px auto
+    padding: 18px 0
+    width: 377px
+    text-align: center
+    border-radius: 50px
+
